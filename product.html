@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>EcoCrop</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+	-->
+	<body class="smoothscroll enable-animation">
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+			<div id="header" class="navbar-toggleable-md sticky  dark header-md clearfix fixed">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- BUTTONS -->
+						<!-- <ul class="float-right nav nav-pills nav-second-main">
+							<li class="search">
+								<a href="javascript:;">
+									<i class="fa fa-search"></i>
+								</a>
+								<div class="search-box">
+									<form action="page-search-result-1.html" method="get">
+										<div class="input-group">
+											<input type="text" name="src" placeholder="Search" class="form-control" />
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="submit">Search</button>
+											</span>
+										</div>
+									</form>
+								</div> 
+							</li>
+
+
+						</ul> -->
+						<!-- /BUTTONS -->
+
+
+						<!-- Logo -->
+						<a class="logo fs-35 fw-400   float-left" href="index.html" style="color: #fff">
+							EcoCrop Corporation
+							<!--<img src="assets/images/_smarty/logo_light.png" alt="" />-->
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<ul id="topMain" class="nav nav-pills nav-main">
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											ГЛАВНАЯ
+										</a>
+									</li>	
+									
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											О КОМПАНИИ
+										</a>
+									</li>		
+									
+									
+									<li class="dropdown nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn"><!-- BLOG and SHOP -->
+										<a class="dropdown-toggle" href="#">
+											ПРОДУКЦИЯ
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<h4><i class="fa fa-cubes"></i>Продукция</h4>
+											</li>
+
+											<li><a class="dropdown-toggle" href="#">ВИНО</a></li>
+											<li><a href="shop-compare.html">ПИВО</a></li>
+											<li><a href="shop-cart.html">ВАРЕНЬЕ</a></li>
+											<li><a href="shop-checkout.html">ПАРФЮМЕРИЯ</a></li>
+											<li><a href="shop-checkout-final.html">ПОСУДА</a></li>
+											<!-- <ul class="dropdown-menu">
+													<li><a href="blog-default-aside-left.html">LEFT SIDEBAR</a></li>
+													<li><a href="blog-default-aside-right.html">RIGHT SIDEBAR</a></li>
+													<li><a href="blog-default-aside-both.html">BOTH SIDEBAR</a></li>
+													<li><a href="blog-default-fullwidth.html">FULL WIDTH</a></li>
+												</ul> -->
+
+										</ul>
+									</li>
+									<li class="dropdown mega-menu  nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn"><!-- BLOG and SHOP -->
+										<a class="dropdown-toggle" href="#">
+											НОВОСТИ
+										</a>
+										
+										<ul class="dropdown-menu text-right">
+											<li>
+												<h4><i class="fa fa-cubes"></i>Новости</h4>
+											</li>
+											
+											<li><a href="shop-compare.html">Сми о нас</a></li>
+											<li><a href="shop-cart.html">Открытие офиса продаж</a></li>
+											<li><a href="shop-checkout.html">Новые виды продукции</a></li>
+											<li><a href="shop-checkout-final.html">Как правильно выбрать материал</a></li>
+											
+
+
+										</ul>
+									</li>
+
+
+
+									<!-- 
+										MENU ANIMATIONS
+											.nav-animate-fadeIn
+											.nav-animate-fadeInUp
+											.nav-animate-bounceIn
+											.nav-animate-bounceInUp
+											.nav-animate-flipInX
+											.nav-animate-flipInY
+											.nav-animate-zoomIn
+											.nav-animate-slideInUp
+
+											.nav-hover-animate 		= animate text on hover
+
+											.hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+									-->
+									<!-- <li class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+										<a class="dropdown-toggle noicon" href="#">
+											<b>ПРОДУКЦИЯ</b>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-clean">
+											<li>
+												<div class="row">
+
+												
+
+													<div class="col-md-5th hidden-sm text-center">
+														<div class="p-15 block">
+															<img class="" width="300"
+																src="img/slider.jpeg"/>
+														</div>
+														
+													</div>
+													<div class="col-md-5th hidden-sm text-center">
+														<div class="p-15 block">
+														<p class="menu-caption hidden-xs-down  text-center">
+															Наши изделия более универсальны и используются под розлив водки, коньяка, джина и других алкогольных и безалкогольных напитков. 
+															Бутылки для спиртного могут подчеркнуть достоинство ваших напитков и использованы вами не только под водку или коньяк. 
+															Практически все изделия оригинальны и подходят для розлива цветных или прозрачных напитков.
+														</p>
+														</div>
+													</div>	
+													
+													
+													<div class="col-md-5th">
+															<ul class="list-unstyled text-right">
+															
+															<li><span>ВИДЫ ПРОДУКЦИИ</span></li>
+															<li><a href="#">ВИНО</a></li>
+															<li><a href="shop-compare.html"><span>ПИВО</span></a></li>
+															<li><a href="shop-cart.html">ВАРЕНЬЕ</a></li>
+															<li><a href="shop-checkout.html">ПАРФЮМЕРИЯ</a></li>
+															<li><a href="shop-checkout-final.html">ПОСУДА</a></li>
+														</ul>
+													</div>
+													
+
+												</div>
+											</li>
+										</ul>
+									</li> -->
+									
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											КОНТАКТЫ
+										</a>
+									</li>	
+									
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+
+			</div>
+
+
+			<section class="page-header page-header-xs">
+				<div class="container">
+					<h2>Пищевая продукция</h2>
+					<!-- breadcrumbs -->
+					<ol class="breadcrumb">
+						<li><a href="#">ГЛАВНАЯ</a></li>
+						<li><a href="#">ПРОДУКЦИЯ</a></li>
+						<li class="active">ПИЩЕВАЯ ПРОДУКЦИЯ</li>
+					</ol><!-- /breadcrumbs -->
+
+
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->
+
+
+
+			<section class="b-0">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<!-- <div class="hidden-xs-down mb-30">
+								<h1 class="m-0 fs-25">Пищевая продукция</h1>
+							</div> -->
+
+							
+							<div class="heading-title heading-border heading-color mt-0">
+								<h2 class="fs-18 fw-400"><a href="#">Газированная/Негазированная вода</a></h2>
+								<p class="fs-13">Описание</p>
+								<p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+								 
+							<div class="heading-title heading-border heading-color mt-0">
+								<h2 class="fs-18 fw-400"><a href="#">Безалкогольные продукты</a></h2>
+								<p class="fs-13">Описание</p>
+								<p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+								 
+							<div class="heading-title heading-border heading-color mt-0">
+								<h2 class="fs-18 fw-400"><a href="#">Лимонад</a></h2>
+								<p class="fs-13">Описание</p>
+								<p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+								 
+							<div class="heading-title heading-border heading-color mt-0">
+								<h2 class="fs-18 fw-400"><a href="#">Соки   </a></h2>
+								<p class="fs-13">Описание</p>
+								<p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+								 
+							<div class="heading-title heading-border heading-color mt-0">
+								<h2 class="fs-18 fw-400"><a href="#">Молоко</a></h2>
+								<p class="fs-13">Описание</p>
+								<p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+								 
+							
+
+
+							<div class="heading-title heading-border heading-color mt-0">
+								<h2 class="fs-18 fw-400">Газированная/Негазированная вода</h2>
+								<p class="fs-13">Описание</p>
+								<p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+							<a href="#" class="btn btn-xlg btn-default btn-bordered btn-block mt-50">ЗАКАЗАТЬ</a>
+
+							<div class="relative mt-50 clearfix">
+
+							
+							</div>
+
+
+						</div>
+
+						<div class="col-lg-8">
+							
+							<div class="lightbox" data-plugin-options='{"delegate": "a", "gallery": {"enabled": true}}'>
+								<a href="img/milk.jpg" class="image-hover-plus image-hover-zoom image-hover-overlay mb-60">
+									<img class="img-fluid" src="img/milk.jpg" alt="" />
+									<i class="icon-hover-plus"></i>
+								</a>
+
+								<a href="img/bottle.jpg" class="image-hover-plus image-hover-zoom image-hover-overlay mb-60">
+									<img class="img-fluid" src="img/bottle.jpg" alt="" />
+									<i class="icon-hover-plus"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+			<!-- RECENT WORK -->
+			<section id="portfolio" class="portfolio-nogutter pb-0 b-0 alternate">
+				<div class="container">
+					<header class="text-center mb-80">
+						<h2>Свяжитесь с нашим менеджером</h2>
+						<p class="fw-300 fs-14 mt-6">и он проконсультирует Вас по всем вопросам</p>
+					</header>
+				</div>
+
+
+
+				<!-- PORTFOLIO ITEMS -->
+				<div class="row lightbox" data-plugin-options='{"delegate": "a", "gallery": {"enabled": true}}'>
+
+					<a href="img/jar_2.jpg" class="col-lg-5th thumbnail p-0 m-0 b-0 image-hover-plus image-hover-zoom image-hover-overlay rad-0">
+						<img class="img-fluid" src="img/jar_2.jpg" alt="" />
+						<i class="icon-hover-plus"></i>
+					</a>
+
+
+					<a href="img/farma.jpg" class="col-lg-5th thumbnail p-0 m-0 b-0 image-hover-plus image-hover-zoom image-hover-overlay rad-0">
+						<img class="img-fluid" src="img/farma2.jpg" alt="" />
+						<i class="icon-hover-plus"></i>
+					</a>
+
+
+					<a href="img/alco.jpg" class="col-lg-5th thumbnail p-0 m-0 b-0 image-hover-plus image-hover-zoom image-hover-overlay rad-0">
+						<img class="img-fluid" src="img/alco.jpg" alt="" />
+						<i class="icon-hover-plus"></i>
+					</a>
+
+
+					<a href="img/parfum.jpg" class="col-lg-5th thumbnail p-0 m-0 b-0 image-hover-plus image-hover-zoom image-hover-overlay rad-0">
+						<img class="img-fluid" src="img/jar_5.jpg" alt="" />
+						<i class="icon-hover-plus"></i>
+					</a>
+
+
+					<a href="img/bottle.jpg" class="col-lg-5th thumbnail p-0 m-0 b-0 image-hover-plus image-hover-zoom image-hover-overlay rad-0">
+						<img class="img-fluid" src="img/bottle.jpg" alt="" />
+						<i class="icon-hover-plus"></i>
+					</a>
+
+
+				</div>
+				<!-- /PORTFOLIO ITEMS -->
+			
+			</section>
+			<!-- /RECENT WORK -->
+
+
+
+
+
+
+		<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+					<div class="row">
+						
+						<div class="col-md-3">
+							<!-- Footer Logo -->
+							<img class="footer-logo" src="img/logo.png" alt="" /> 
+							<!-- <h2>EcoCrop</h2> -->
+							<p>Завод-изготовитель стеклотары.</p>
+							<!-- Contact Address -->
+							<address>
+								<ul class="list-unstyled">
+									<li class="footer-sprite address">
+										454120<br>
+										Москва<br>
+										Лубянка,35 <br>
+									</li>
+									<li class="footer-sprite phone">
+										Телефон +7(999)555-55-44
+									</li>
+									<li class="footer-sprite email">
+										<a href="mailto:support@yourname.com">info@ecocrop.ru</a>
+									</li>
+								</ul>
+							</address>
+							<!-- /Contact Address -->
+
+						</div>
+
+						<div class="col-md-4">
+
+							<!-- Latest Blog Post -->
+							<h4 class="letter-spacing-1">Последние новости</h4>
+							<ul class="footer-posts list-unstyled">
+								<li>
+									<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
+									<small>29 June 2017</small>
+								</li>
+								<li>
+									<a href="#">Nullam id dolor id nibh ultricies</a>
+									<small>29 June 2017</small>
+								</li>
+								<li>
+									<a href="#">Duis mollis, est non commodo luctus</a>
+									<small>29 June 2017</small>
+								</li>
+							</ul>
+							<!-- /Latest Blog Post -->
+
+						</div>
+
+						<div class="col-md-3">
+
+							<!-- Links -->
+							<h4 class="letter-spacing-1">Клиентам</h4>
+							<ul class="footer-links list-unstyled">
+							    <li><a href="#">О компании</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Продукиця</a></li>
+								<li><a href="#">Как заказть</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+							<!-- /Links -->
+
+						</div>
+
+						<div class="col-md-1 text-right">
+
+							
+							<!-- Social Icons -->
+							<div class="mt-20">
+								<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+<!-- 
+								<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
+									<i class="icon-rss"></i>
+									<i class="icon-rss"></i>
+								</a> -->
+					
+							</div>
+							<!-- /Social Icons -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<!-- <li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li> -->
+						</ul>
+						&copy; Все права защищены
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+	</body>
+</html>

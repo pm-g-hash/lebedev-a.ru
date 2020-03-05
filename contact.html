@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>EcoCrop</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+	-->
+	<body class="smoothscroll enable-animation">
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+			<div id="header" class="navbar-toggleable-md sticky  dark header-md clearfix fixed">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- BUTTONS -->
+						<!-- <ul class="float-right nav nav-pills nav-second-main">
+							<li class="search">
+								<a href="javascript:;">
+									<i class="fa fa-search"></i>
+								</a>
+								<div class="search-box">
+									<form action="page-search-result-1.html" method="get">
+										<div class="input-group">
+											<input type="text" name="src" placeholder="Search" class="form-control" />
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="submit">Search</button>
+											</span>
+										</div>
+									</form>
+								</div> 
+							</li>
+
+
+						</ul> -->
+						<!-- /BUTTONS -->
+
+
+						<!-- Logo -->
+						<a class="logo fs-35 fw-400   float-left" href="index.html" style="color: #fff">
+							EcoCrop Corporation
+							<!--<img src="assets/images/_smarty/logo_light.png" alt="" />-->
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<ul id="topMain" class="nav nav-pills nav-main">
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											ГЛАВНАЯ
+										</a>
+									</li>	
+									
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											О КОМПАНИИ
+										</a>
+									</li>		
+									
+									
+									<li class="dropdown nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn"><!-- BLOG and SHOP -->
+										<a class="dropdown-toggle" href="#">
+											ПРОДУКЦИЯ
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<h4><i class="fa fa-cubes"></i>Продукция</h4>
+											</li>
+
+											<li><a class="dropdown-toggle" href="#">ВИНО</a></li>
+											<li><a href="shop-compare.html">ПИВО</a></li>
+											<li><a href="shop-cart.html">ВАРЕНЬЕ</a></li>
+											<li><a href="shop-checkout.html">ПАРФЮМЕРИЯ</a></li>
+											<li><a href="shop-checkout-final.html">ПОСУДА</a></li>
+											<!-- <ul class="dropdown-menu">
+													<li><a href="blog-default-aside-left.html">LEFT SIDEBAR</a></li>
+													<li><a href="blog-default-aside-right.html">RIGHT SIDEBAR</a></li>
+													<li><a href="blog-default-aside-both.html">BOTH SIDEBAR</a></li>
+													<li><a href="blog-default-fullwidth.html">FULL WIDTH</a></li>
+												</ul> -->
+
+										</ul>
+									</li>
+									<li class="dropdown mega-menu  nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn"><!-- BLOG and SHOP -->
+										<a class="dropdown-toggle" href="#">
+											НОВОСТИ
+										</a>
+										
+										<ul class="dropdown-menu text-right">
+											<li>
+												<h4><i class="fa fa-cubes"></i>Новости</h4>
+											</li>
+											
+											<li><a href="shop-compare.html">Сми о нас</a></li>
+											<li><a href="shop-cart.html">Открытие офиса продаж</a></li>
+											<li><a href="shop-checkout.html">Новые виды продукции</a></li>
+											<li><a href="shop-checkout-final.html">Как правильно выбрать материал</a></li>
+											
+
+
+										</ul>
+									</li>
+
+
+
+									<!-- 
+										MENU ANIMATIONS
+											.nav-animate-fadeIn
+											.nav-animate-fadeInUp
+											.nav-animate-bounceIn
+											.nav-animate-bounceInUp
+											.nav-animate-flipInX
+											.nav-animate-flipInY
+											.nav-animate-zoomIn
+											.nav-animate-slideInUp
+
+											.nav-hover-animate 		= animate text on hover
+
+											.hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+									-->
+									<!-- <li class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+										<a class="dropdown-toggle noicon" href="#">
+											<b>ПРОДУКЦИЯ</b>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-clean">
+											<li>
+												<div class="row">
+
+												
+
+													<div class="col-md-5th hidden-sm text-center">
+														<div class="p-15 block">
+															<img class="" width="300"
+																src="img/slider.jpeg"/>
+														</div>
+														
+													</div>
+													<div class="col-md-5th hidden-sm text-center">
+														<div class="p-15 block">
+														<p class="menu-caption hidden-xs-down  text-center">
+															Наши изделия более универсальны и используются под розлив водки, коньяка, джина и других алкогольных и безалкогольных напитков. 
+															Бутылки для спиртного могут подчеркнуть достоинство ваших напитков и использованы вами не только под водку или коньяк. 
+															Практически все изделия оригинальны и подходят для розлива цветных или прозрачных напитков.
+														</p>
+														</div>
+													</div>	
+													
+													
+													<div class="col-md-5th">
+															<ul class="list-unstyled text-right">
+															
+															<li><span>ВИДЫ ПРОДУКЦИИ</span></li>
+															<li><a href="#">ВИНО</a></li>
+															<li><a href="shop-compare.html"><span>ПИВО</span></a></li>
+															<li><a href="shop-cart.html">ВАРЕНЬЕ</a></li>
+															<li><a href="shop-checkout.html">ПАРФЮМЕРИЯ</a></li>
+															<li><a href="shop-checkout-final.html">ПОСУДА</a></li>
+														</ul>
+													</div>
+													
+
+												</div>
+											</li>
+										</ul>
+									</li> -->
+									
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											КОНТАКТЫ
+										</a>
+									</li>	
+									
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				<!-- /Top Nav -->
+			</div>
+
+
+			<section class="page-header">
+				<div class="container">
+
+					<h1>Контакты</h1>
+
+					<!-- breadcrumbs -->
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li class="active">Контакты</li>
+						
+					</ol><!-- /breadcrumbs -->
+
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->
+
+
+
+
+			<!-- -->
+			<section>
+				<div class="container">
+					<div class="row">
+						<!-- FORM -->
+						<div class="col-md-8">
+							<h3>Обратная связь</h3>
+
+							
+							<!--
+								MESSAGES
+								
+									How it works?
+									The form data is posted to php/contact.php where the fields are verified!
+									php.contact.php will redirect back here and will add a hash to the end of the URL:
+										#alert_success 		= email sent
+										#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
+										#alert_mandatory	= email not sent - required fields empty
+										Hashes are handled by assets/js/contact.js
+
+									Form data: required to be an array. Example:
+										contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
+										Also, add `required` to input fields if is a mandatory field. 
+										Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
+
+									PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
+												 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
+
+									WARNING! Do not change the `email` and `name`!
+												contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+												contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+							-->
+
+							<!-- Alert Success -->
+							<div id="alert_success" class="alert alert-success mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Thank You!</strong> Your message successfully sent!
+							</div><!-- /Alert Success -->
+
+
+							<!-- Alert Failed -->
+							<div id="alert_failed" class="alert alert-danger mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>[SMTP] Error!</strong> Internal server error!
+							</div><!-- /Alert Failed -->
+
+
+							<!-- Alert Mandatory -->
+							<div id="alert_mandatory" class="alert alert-danger mb-30">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+							</div><!-- /Alert Mandatory -->
+
+
+							<form action="php/contact.php" method="post" enctype="multipart/form-data">
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+											<div class="col-md-4">
+												<label for="contact:name">Имя *</label>
+												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:email">E-mail *</label>
+												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+											</div>
+											<div class="col-md-4">
+												<label for="contact:phone">Телефон</label>
+												<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
+											</div>
+									</div>
+									<div class="row">
+											<div class="col-md-8">
+												<label for="contact:subject">Тема *</label>
+												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
+											</div>
+									</div>
+									<div class="row">
+											<div class="col-md-12">
+												<label for="contact:message">Сообщение *</label>
+												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
+											</div>
+									</div>
+									<div class="row">
+											<div class="col-md-12">
+												<label for="contact:attachment">Прикрепить файл</label>
+
+												<!-- custom file upload -->
+												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
+												<small class="text-muted block">Разрешенный формат zip/pdf/jpg/png</small>
+
+											</div>
+									</div>
+
+								</fieldset>
+
+								<div class="row">
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Отправить</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+						<!-- /FORM -->
+
+
+						<!-- INFO -->
+						<div class="col-md-4">
+
+							<!-- 
+							Available heights
+								h-100
+								h-150
+								h-200
+								h-250
+								h-300
+								h-350
+								h-400
+								h-450
+								h-500
+								h-550
+								h-600
+							-->
+							<div id="map2" class="h-400 grayscale"></div>
+
+							<hr />
+
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Адрес:</strong> Москва, Тверска 15</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Телефон:</strong> <a href="tel:1800-555-1234">+7 999 800 99-88</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">zakaz@ecocrop.ru</a></span>
+							</p>
+
+						</div>
+						<!-- /INFO -->
+
+					</div>
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+					<div class="row">
+						
+						<div class="col-md-3">
+							<!-- Footer Logo -->
+							<img class="footer-logo" src="img/logo.png" alt="" /> 
+							<!-- <h2>EcoCrop</h2> -->
+							<p>Завод-изготовитель стеклотары.</p>
+							<!-- Contact Address -->
+							<address>
+								<ul class="list-unstyled">
+									<li class="footer-sprite address">
+										454120<br>
+										Москва<br>
+										Лубянка,35 <br>
+									</li>
+									<li class="footer-sprite phone">
+										Телефон +7(999)555-55-44
+									</li>
+									<li class="footer-sprite email">
+										<a href="mailto:support@yourname.com">info@ecocrop.ru</a>
+									</li>
+								</ul>
+							</address>
+							<!-- /Contact Address -->
+
+						</div>
+
+						<div class="col-md-4">
+
+							<!-- Latest Blog Post -->
+							<h4 class="letter-spacing-1">Последние новости</h4>
+							<ul class="footer-posts list-unstyled">
+								<li>
+									<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
+									<small>29 June 2017</small>
+								</li>
+								<li>
+									<a href="#">Nullam id dolor id nibh ultricies</a>
+									<small>29 June 2017</small>
+								</li>
+								<li>
+									<a href="#">Duis mollis, est non commodo luctus</a>
+									<small>29 June 2017</small>
+								</li>
+							</ul>
+							<!-- /Latest Blog Post -->
+
+						</div>
+
+						<div class="col-md-3">
+
+							<!-- Links -->
+							<h4 class="letter-spacing-1">Клиентам</h4>
+							<ul class="footer-links list-unstyled">
+							    <li><a href="#">О компании</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Продукиця</a></li>
+								<li><a href="#">Как заказть</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+							<!-- /Links -->
+
+						</div>
+
+						<div class="col-md-1 text-right">
+
+							
+							<!-- Social Icons -->
+							<div class="mt-20">
+								<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+<!-- 
+								<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
+									<i class="icon-rss"></i>
+									<i class="icon-rss"></i>
+								</a> -->
+					
+							</div>
+							<!-- /Social Icons -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<!-- <li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li> -->
+						</ul>
+						&copy; Все права защищены
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+		-->
+		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+		<script src="assets/plugins/gmaps.js"></script>
+		<script>
+
+			jQuery(document).ready(function(){
+
+				/**
+					@BASIC GOOGLE MAP
+				**/
+				var map2 = new GMaps({
+					div: '#map2',
+					lat: -12.043333,
+					lng: -77.028333,
+					scrollwheel: false
+				});
+
+				var marker = map2.addMarker({
+					lat: -12.043333,
+					lng: -77.028333,
+					title: 'Company, Inc.'
+				});
+
+			});
+
+		</script>
+	</body>
+</html>

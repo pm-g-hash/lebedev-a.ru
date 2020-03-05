@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Eco Crop</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/thematics-restaurant.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/brown.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky bottom dark header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- BUTTONS -->
+						<!-- <ul class="float-right nav nav-pills nav-second-main">
+
+
+							<li class="search">
+								<a href="javascript:;">
+									<i class="fa fa-search"></i>
+								</a>
+								<div class="search-box">
+									<form action="page-search-result-1.html" method="get">
+										<div class="input-group">
+											<input type="text" name="src" placeholder="Search" class="form-control" />
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="submit">Search</button>
+											</span>
+										</div>
+									</form>
+								</div> 
+							</li>
+
+
+						</ul> -->
+						<!-- /BUTTONS -->
+
+
+						<!-- Logo -->
+						<a class="logo fs-35 fw-400   float-left" href="index.html">
+							<!-- EcoCrop Corporation -->
+							<img src="img/logo.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<ul id="topMain" class="nav nav-pills nav-main">
+									
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											О КОМПАНИИ
+										</a>
+									</li>		
+									
+									
+									<li class="dropdown nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn"><!-- BLOG and SHOP -->
+										<a class="dropdown-toggle" href="#">
+											ПРОДУКЦИЯ
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<h4><i class="fa fa-cubes"></i>Продукция</h4>
+											</li>
+
+											<li><a href="product.html">Алкогольная	продукции</a></li>
+											<li><a href="product.html">ПИЩЕВАЯ ПРОДУКИЯ</a></li>
+											<li><a href="product.html">БАНКИ (ВАРЕНЬЕ)</a></li>
+											<li><a href="product.html">ПАРФЮМЕРИЯ</a></li>
+											<li><a href="product.html">ФАРМОКОЛОГИЯ</a></li>
+											<!-- <ul class="dropdown-menu">
+													<li><a href="blog-default-aside-left.html">LEFT SIDEBAR</a></li>
+													<li><a href="blog-default-aside-right.html">RIGHT SIDEBAR</a></li>
+													<li><a href="blog-default-aside-both.html">BOTH SIDEBAR</a></li>
+													<li><a href="blog-default-fullwidth.html">FULL WIDTH</a></li>
+												</ul> -->
+
+										</ul>
+									</li>
+									<li class="dropdown mega-menu  nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn"><!-- BLOG and SHOP -->
+										<a class="dropdown-toggle" href="#">
+											НОВОСТИ
+										</a>
+										
+										<ul class="dropdown-menu text-right">
+											<li>
+												<h4><i class="fa fa-cubes"></i>Новости</h4>
+											</li>
+											
+											<li><a href="shop-compare.html">Сми о нас</a></li>
+											<li><a href="shop-cart.html">Открытие офиса продаж</a></li>
+											<li><a href="shop-checkout.html">Новые виды продукции</a></li>
+											<li><a href="shop-checkout-final.html">Как правильно выбрать материал</a></li>
+											
+
+
+										</ul>
+									</li>
+
+
+
+									<!-- 
+										MENU ANIMATIONS
+											.nav-animate-fadeIn
+											.nav-animate-fadeInUp
+											.nav-animate-bounceIn
+											.nav-animate-bounceInUp
+											.nav-animate-flipInX
+											.nav-animate-flipInY
+											.nav-animate-zoomIn
+											.nav-animate-slideInUp
+
+											.nav-hover-animate 		= animate text on hover
+
+											.hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+									-->
+									<!-- <li class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+										<a class="dropdown-toggle noicon" href="#">
+											<b>ПРОДУКЦИЯ</b>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-clean">
+											<li>
+												<div class="row">
+
+												
+
+													<div class="col-md-5th hidden-sm text-center">
+														<div class="p-15 block">
+															<img class="" width="300"
+																src="img/slider.jpg"/>
+														</div>
+														
+													</div>
+													<div class="col-md-5th hidden-sm text-center">
+														<div class="p-15 block">
+														<p class="menu-caption hidden-xs-down  text-center">
+															Наши изделия более универсальны и используются под розлив водки, коньяка, джина и других алкогольных и безалкогольных напитков. 
+															Бутылки для спиртного могут подчеркнуть достоинство ваших напитков и использованы вами не только под водку или коньяк. 
+															Практически все изделия оригинальны и подходят для розлива цветных или прозрачных напитков.
+														</p>
+														</div>
+													</div>	
+													
+													
+													<div class="col-md-5th">
+															<ul class="list-unstyled text-right">
+															
+															<li><span>ВИДЫ ПРОДУКЦИИ</span></li>
+															<li><a href="#">ВИНО</a></li>
+															<li><a href="shop-compare.html"><span>ПИВО</span></a></li>
+															<li><a href="shop-cart.html">ВАРЕНЬЕ</a></li>
+															<li><a href="shop-checkout.html">ПАРФЮМЕРИЯ</a></li>
+															<li><a href="shop-checkout-final.html">ПОСУДА</a></li>
+														</ul>
+													</div>
+													
+
+												</div>
+											</li>
+										</ul>
+									</li> -->
+									
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											КОНТАКТЫ
+										</a>
+									</li>	
+									
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+
+			<!-- REVOLUTION SLIDER -->
+			<div class="slider fullwidthbanner-container roundedcorners">
+				
+				<!-- slider top links -->
+				<div class="top-shadow pt-20"><!-- top shadow over image -->
+
+					<!-- <div class="container hidden-md hidden-sm hidden-xs-down">
+						<div class="slider-links position-top">
+							<ul class="list-inline">
+								<li class="fw-700 letter-spacing-1">
+									trending
+								</li>
+								<li>
+									<a href="#">Did Kylie Jenner steal Beyonce's denim look?</a>
+								</li>
+								<li>
+									<a href="#">Justin Timberlake and Jessica Biel share first photo of baby</a>
+								</li>
+								<li>
+									<a href="#">You won't be able to guess the highest grossing film of 2014</a>
+								</li>
+								<li>
+									<a href="#">'Frozen' star Idina Menzel has gone blonde like Elsa!</a>
+								</li>
+							</ul>
+						</div>
+					</div> -->
+				</div>
+				<div class="bottom-shadow"></div>
+				<!-- /slider top links -->
+
+				<!--
+					Navigation Styles:
+					
+						data-navigationStyle="" theme default navigation
+						
+						data-navigationStyle="preview1"
+						data-navigationStyle="preview2"
+						data-navigationStyle="preview3"
+						data-navigationStyle="preview4"
+						
+					Bottom Shadows
+						data-shadow="1"
+						data-shadow="2"
+						data-shadow="3"
+						
+					Slider Height (do not use on fullscreen mode)
+						data-height="300"
+						data-height="350"
+						data-height="400"
+						data-height="450"
+						data-height="500"
+						data-height="550"
+						data-height="600"
+						data-height="650"
+						data-height="700"
+						data-height="750"
+						data-height="800"
+				-->
+				<div class="fullscreenbanner" data-height="600" data-shadow="0" data-navigationStyle="preview1">
+					<ul class="hide">
+
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide title 1"
+																		data-thumb="img/slider_3.jpg">
+
+							<img src="assets/images/_smarty/1x1.png" data-lazyload="img/slider_3.jpg" alt="" data-bgfit="cover" 
+									data-bgposition="center top" data-bgrepeat="no-repeat" />
+
+							<div class="overlay dark-1"><!-- dark overlay [0 to 9 opacity] --></div>
+							<div class="tp-caption customin ltl tp-resizeme small_light_white font-lato"
+								data-x="left"
+								data-y="100"
+								data-customin="x:-200;y:50;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="color:#fff; z-index: 10; font-size:20px; width: 100%; max-width: 250px; white-space: normal; text-align:left;">
+								<h2>Работаем без посредников</h2>
+								<p>Lorem ipsum dolor sit amet, 
+								consectetur adipisicing elit. 
+								Eveniet cumque, perferendis accusamus porro illo 
+								exercitationem molestias, inventore obcaecati ut omnis 
+								voluptatibus ratione odio amet magnam quidem tempore.
+								</p>
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme small_light_white font-lato"
+								data-x="500"
+								data-y="450"
+								data-customin="x:0;y:350;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1800"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" 
+								style="color:#fff; font-size:30px; z-index: 10; width: 100%; max-width: 450px; white-space: normal; text-align:left;">
+								<h2>Собственное производство</h2>
+								Ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, 
+								perferendis accusamus porro illo exercitationem molestias.
+							</div>
+						</li>
+
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide title 1" 
+																		data-thumb="img/slider_1.jpg">
+
+							<img src="assets/images/_smarty/1x1.png" data-lazyload="img/slider_1.jpg" alt="" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat" />
+
+							<div class="overlay dark-1"><!-- dark overlay [1 to 9 opacity] --></div>
+
+							<div class="tp-caption customin ltl tp-resizeme small_light_white font-lato"
+								data-x="left"
+								data-y="450"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="color:#fff; font-size:20px; z-index: 10; width: 100%; max-width: 250px; white-space: normal; text-align:left;">
+								<h4>Lorem Ipsum Dolor</h4>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, perferendis accusamus porro illo exercitationem molestias, inventore obcaecati ut omnis voluptatibus ratione odio amet magnam quidem tempore.
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme small_light_white font-lato"
+								data-x="right"
+								data-y="450"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1800"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="color:#fff; font-size:20px; z-index: 10; width: 100%; max-width: 250px; white-space: normal; text-align:left;">
+								<h4>Consectetur Adipisicing</h4>
+								Ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, perferendis accusamus porro illo exercitationem molestias.
+							</div>
+						</li>
+						
+
+					    
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" 
+										 data-title="Slide title 1" 	data-thumb="img/jar.jpg">
+							<img src="assets/images/_smarty/1x1.png" data-lazyload="img/jar.jpg" alt="" data-bgfit="cover" 
+									data-bgposition="center top" data-bgrepeat="no-repeat" />
+							<div class="overlay dark-1"></div>
+						</li>
+
+
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" 
+										 data-title="Slide title 1" 	data-thumb="img/jar_3.jpg">
+							<img src="assets/images/_smarty/1x1.png" data-lazyload="img/jar_3.jpg" alt="" data-bgfit="cover" 
+									data-bgposition="center top" data-bgrepeat="no-repeat" />
+							<div class="overlay dark-1"></div>
+						</li>
+
+						
+						
+
+
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" 
+										 data-title="Slide title 1" 	data-thumb="img/jar_5.jpg">
+							<img src="assets/images/_smarty/1x1.png" data-lazyload="img/jar_5.jpg" alt="" data-bgfit="cover" 
+									data-bgposition="center" data-bgrepeat="no-repeat" />
+							<div class="overlay dark-1"></div>
+						</li>
+						<!-- SLIDE  -->
+
+
+
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" 
+										 data-title="Slide title 1" 	data-thumb="img/farma.jpg">
+							<img src="assets/images/_smarty/1x1.png" data-lazyload="img/farma.jpg" alt="" data-bgfit="cover" 
+									data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+							<div class="overlay dark-1"></div>
+						</li>
+
+						
+
+						
+						
+						
+						<!-- SLIDE  -->
+						<li data-transition="fade" data-slotamount="1" 
+								data-masterspeed="1000" 
+								data-saveperformance="on" 
+								data-title="Slide title 1" 
+								data-thumb="img/slider_4.jpg">
+
+							<img src="assets/images/_smarty/1x1.png" 
+								data-lazyload="img/slider_4.jpg" 
+								data-bgfit="cover" 
+								data-bgposition="center center" data-bgrepeat="no-repeat" />
+
+							<div class="overlay dark-1"><!-- dark overlay [1 to 9 opacity] --></div>
+
+							<div class="tp-caption customin ltl tp-resizeme small_light_white font-lato"
+								data-x="left"
+								data-y="450"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="color:#fff; font-size:20px; z-index: 10; width: 100%; max-width: 250px; white-space: normal; text-align:left;">
+								<h2>Lorem Ipsum Dolor</h2>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Eveniet cumque, perferendis accusamus porro illo exercitationem molestias, 
+								inventore obcaecati ut omnis voluptatibus ratione odio amet magnam quidem tempore.
+							</div>
+
+						</li>
+
+					</ul>
+
+					<div class="tp-bannertimer"><!-- progress bar --></div>
+				</div>
+			</div>
+			<!-- /REVOLUTION SLIDER -->
+
+
+
+			<!-- Welcome -->
+			<section>
+				<div class="container">
+
+					<div class="text-center mt-40 mb-0 clearfix">
+						<h1 class="font-cinzel-decorative fs-40 fw-300 mb-0">EcoCorp - <span>производство стеклотары</span></h1>
+						<hr />
+						<p>История компании  началась на заре нового века – Время Новых Технологий и Научного Подхода к 
+						изготовлению узкогорлой и широкогорлой стеклянной тары позволило СЛОДЭС собрать в компании специалистов высокого уровня в области дизайна, конструирования и производства стеклянных изделий.
+
+  <p>Самая главная цель в работе компании  – создание оригинальных проектов со своей неповторимостью и технологичностью процесса, как в производстве самой стеклянной бутылки(банки), так и в изготовлении Вашей готовой продукции.  Научный подход заключается именно в истоке создания самого дизайна и конструкторской документации бутылки(банки). </p>
+ <p> Компания проводит пилотные(тестовые) испытания на реальных производственных площадках для того, чтобы учесть все технологические тонкости и исключить возможные ошибки в дальнейшем производстве серийных, массовых партий оригинальных и эксклюзивных стеклянных бутылок и банок
+ Для решения поставленной задачи специалисты компании используют все последние достижения в технологии производства узкогорлой и широкогорлой тары, не забывая при этом и о классике.
+  За весь период работы компании разработано более 10 Торговых Знаков, более 40 промышленных образцов бутылок и изделий из стекла, 2 полезные модели на укупорочные устройства, которые являются интеллектуальной собственностью компании. </p>
+  
+					</div>
+
+				</div>
+			</section>
+			<!-- /Welcome -->
+			
+			
+			
+			
+			
+			<!-- PRODUCTS -->
+			<section class="alternate">
+				<div class="container">
+
+					<div class="row">
+					
+						<div class="col-sm-4 text-center-xs">
+
+							<h2 class="font-cinzel-decorative fs-50 fw-300 mb-0 "><span>ПРОДУКЦИЯ</span></h2>
+							<h3 class="fw-400 fs-25">Виды продукции</h3>
+							
+							<p>Разрабатываем индивидуальный дизайн из цветного и бесцветного стекла;
+								Изготавливаем формокомплекты для производства стеклянной тары;
+								Создаем универсальную стеклянную тару для использования на любых линиях розлива без проведения масштабной модернизации;
+								При производстве нашей стеклобутылки организован контроль качества на соответствие ГОСТ и внутренним стандартам на современном контрольном оборудовании
+								Цены на стеклянные бутылки имеют оптимальные конкурентные преимущества по отношении к аналогичным изделиям на рынке стеклотары.
+								Для оформления покупки вы можете связаться с нашими менеджерами по телефону, указанному в верхней части страницы.
+							</p>
+							<p class="fs-11"><b>Note:</b> 
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						</div>
+						
+						<div class="col-sm-8">
+							
+							<div class="row" data-plugin-options='{"delegate": "a", "gallery": {"enabled": true}}'>
+
+								<div class="col-sm-4 col-6">
+									<a class="thumbnail" href="product.html">
+										Алкогольная продукция
+										<img class="img-fluid" src="img/alco.jpg" alt="" />
+									</a>
+								</div>
+
+
+								<div class="col-sm-4 col-6">
+									<a class="thumbnail" href="product.html">
+										Пищевая продукция
+										<img class="img-fluid" src="img/milk.jpg" alt="" />
+									</a>
+								</div>
+
+								
+								<div class="col-sm-4 col-6">
+									<a class="thumbnail" href="product.html">
+										Банки
+										<img class="img-fluid" src="img/jar_2.jpg" alt="" />
+									</a>
+								</div>
+							    
+
+							    <div class="col-sm-4 col-6">
+									<a class="thumbnail" href="product.html">
+										Фарма
+										<img class="img-fluid" src="img/farma2.jpg" alt="" />
+									</a>
+								</div>
+
+								<!-- <div class="col-sm-4 col-6">
+									<a class="thumbnail" href="product.html">
+										Бутылки (пищевые)
+										<img class="img-fluid" src="img/bottle.jpg" alt="" />
+									</a>
+								</div>
+ -->
+								<div class="col-sm-4 col-6">
+									<a class="thumbnail" href="product.html">
+										Парфюмерия/Красота
+										<img class="img-fluid" src="img/parfum.jpg" alt="" />
+									</a>
+								</div>
+								
+
+
+							</div>							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /PRODUCTS -->
+
+
+
+
+			<!-- News -->
+			<section id="news">
+				<div class="container">
+					<div class="row">
+					
+						<!-- RIGHT -->
+						<div class="col-lg-12 col-md-12 col-sm-12 order-lg-2 order-md-2 order-sm-2">
+
+							<h2>Последние новости</h2>
+
+							<!-- news item -->
+							<div class="inews-item">
+								<a class="inews-thumbnail" href="#">
+									<span class="inews-sticky font-lato">
+										<i class="fa fa-bullhorn"></i> 
+										STICKY POST
+									</span>
+									<img class="img-fluid" src="demo_files/images/thematics/fashion/thumb_f6-min.jpg" alt="image" />
+								</a>
+								
+								<div class="inews-item-content">
+
+									<div class="inews-date-wrapper">
+										<span class="inews-date-day">29</span>
+										<span class="inews-date-month">June</span>
+										<span class="inews-date-year">2019</span>
+									</div>
+
+									<div class="inews-content-inner">
+
+										<h3 class="fs-20"><a href="#">Lorem Upsum Dolor</a></h3>
+										<ul class="blog-post-info list-inline b-0 mb-20 p-0">
+											<li>
+												<a href="page-profile.html">
+													<i class="fa fa-user"></i> 
+													<span class="font-lato">By John Doe</span>
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-folder-open-o"></i> 
+
+												<a class="category" href="#">
+													<span class="font-lato">Design</span>
+												</a>
+												<a class="category" href="#">
+													<span class="font-lato">Photography</span>
+												</a>
+											</li>
+										</ul>
+
+										<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....</p>
+									</div>
+									
+
+								</div>
+							</div>
+							<!-- /news item -->
+
+							<!-- news item -->
+							<div class="inews-item">
+								<a class="inews-thumbnail" href="#">
+									<img class="img-fluid" src="demo_files/images/thematics/fashion/thumb_f7-min.jpg" alt="image" />
+								</a>
+								
+								<div class="inews-item-content">
+
+									<div class="inews-date-wrapper">
+										<span class="inews-date-day">29</span>
+										<span class="inews-date-month">June</span>
+										<span class="inews-date-year">2020</span>
+									</div>
+
+									<div class="inews-content-inner">
+
+										<h3 class="fs-20"><a href="#">Lorem Upsum Dolor</a></h3>
+										<ul class="blog-post-info list-inline b-0 mb-20 p-0">
+											<li>
+												<a href="page-profile.html">
+													<i class="fa fa-user"></i> 
+													<span class="font-lato">By John Doe</span>
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-folder-open-o"></i> 
+
+												<a class="category" href="#">
+													<span class="font-lato">Design</span>
+												</a>
+												<a class="category" href="#">
+													<span class="font-lato">Photography</span>
+												</a>
+											</li>
+										</ul>
+
+										<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....</p>
+									</div>
+									
+
+								</div>
+							</div>
+							<!-- /news item -->
+
+							<!-- news item -->
+							<div class="inews-item">
+								<a class="inews-thumbnail" href="#">
+									<img class="img-fluid" src="demo_files/images/thematics/fashion/thumb_f8-min.jpg" alt="image" />
+								</a>
+								
+								<div class="inews-item-content">
+
+									<div class="inews-date-wrapper">
+										<span class="inews-date-day">29</span>
+										<span class="inews-date-month"></span>
+										<span class="inews-date-year">2020</span>
+									</div>
+
+									<div class="inews-content-inner">
+
+										<h3 class="fs-20"><a href="#">Lorem Upsum Dolor</a></h3>
+										<ul class="blog-post-info list-inline b-0 mb-20 p-0">
+											<li>
+												<a href="page-profile.html">
+													<i class="fa fa-user"></i> 
+													<span class="font-lato">By John Doe</span>
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-folder-open-o"></i> 
+
+												<a class="category" href="#">
+													<span class="font-lato">Design</span>
+												</a>
+												<a class="category" href="#">
+													<span class="font-lato">Photography</span>
+												</a>
+											</li>
+										</ul>
+
+										<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere....</p>
+									</div>
+									
+
+								</div>
+							</div>
+							<!-- /news item -->
+
+							<a href="#" class="btn btn-default btn-lg btn-block">ВСЕ НОВОСТИ</a>
+						</div>
+						
+					</div>
+
+				</div>
+			</section>
+			<!-- /News -->
+
+			
+			
+
+
+			
+
+
+
+
+			<!-- Parallax -->
+			<section class="parallax parallax-2" style="background-image: url('img/slider_3.jpg');">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container">
+
+					<div class="text-center">
+						<h3 class="font-cinzel-decorative m-0 fw-300"><span>Интересный текст</span></h3>
+						<p class="font-lato fw-300 lead mt-0">YOU DON'T WANT TO MISS OUR EVENTS</p>
+					</div>
+
+				</div>
+			</section>
+			<!-- /Parallax -->
+
+
+
+
+			<!-- Latest Videos -->
+			<section id="videos">
+				<div class="container">
+
+					<h2>Video Presentations <span class="fs-18">/ Get update from us!</span></h2>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="embed-responsive embed-responsive-16by9"><!-- VIMEO VIDEO -->
+								<iframe class="embed-responsive-item" src="//player.vimeo.com/video/8408210" width="800" height="450"></iframe>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="embed-responsive embed-responsive-16by9"><!-- VIMEO VIDEO -->
+								<iframe class="embed-responsive-item" src="//player.vimeo.com/video/28748175" width="800" height="450"></iframe>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- /Latest Videos -->
+
+
+
+			
+
+<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+					<div class="row">
+						
+						<div class="col-md-3">
+							<!-- Footer Logo -->
+							<img class="footer-logo" src="img/logo.png" alt="" /> 
+							<!-- <h2>EcoCrop</h2> -->
+							<p>Завод-изготовитель стеклотары.</p>
+							<!-- Contact Address -->
+							<address>
+								<ul class="list-unstyled">
+									<li class="footer-sprite address">
+										454120<br>
+										Москва<br>
+										Лубянка,35 <br>
+									</li>
+									<li class="footer-sprite phone">
+										Телефон +7(999)555-55-44
+									</li>
+									<li class="footer-sprite email">
+										<a href="mailto:support@yourname.com">info@ecocrop.ru</a>
+									</li>
+								</ul>
+							</address>
+							<!-- /Contact Address -->
+
+						</div>
+
+						<div class="col-md-4">
+
+							<!-- Latest Blog Post -->
+							<h4 class="letter-spacing-1">Последние новости</h4>
+							<ul class="footer-posts list-unstyled">
+								<li>
+									<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
+									<small>29 June 2017</small>
+								</li>
+								<li>
+									<a href="#">Nullam id dolor id nibh ultricies</a>
+									<small>29 June 2017</small>
+								</li>
+								<li>
+									<a href="#">Duis mollis, est non commodo luctus</a>
+									<small>29 June 2017</small>
+								</li>
+							</ul>
+							<!-- /Latest Blog Post -->
+
+						</div>
+
+						<div class="col-md-3">
+
+							<!-- Links -->
+							<h4 class="letter-spacing-1">Клиентам</h4>
+							<ul class="footer-links list-unstyled">
+							    <li><a href="#">О компании</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Продукиця</a></li>
+								<li><a href="#">Как заказть</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+							<!-- /Links -->
+
+						</div>
+
+						<div class="col-md-1 text-right">
+
+							
+							<!-- Social Icons -->
+							<div class="mt-20">
+								<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+<!-- 
+								<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
+									<i class="icon-rss"></i>
+									<i class="icon-rss"></i>
+								</a> -->
+					
+							</div>
+							<!-- /Social Icons -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<!-- <li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li> -->
+						</ul>
+						&copy; Все права защищены
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+	
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		
+		<!-- REVOLUTION SLIDER -->
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+	</body>
+</html>
